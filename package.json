@@ -2,7 +2,7 @@
   "name": "preact-cli-tailwind",
   "version": "1.0.0",
   "description": "Preact CLI Plugin that helps add Tailwind CSS",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint src",
     "release": "np --no-tests"
