@@ -13,6 +13,9 @@
     "preact-plugin",
     "tailwind"
   ],
+  "files": [
+    "src"
+  ],
   "author": "Agney Menon <agney@outlook.in>",
   "license": "MIT",
   "dependencies": {},
