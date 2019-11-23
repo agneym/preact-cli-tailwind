@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Preact CLI Plugin that helps add Tailwind CSS",
   "main": "src/index.js",
+  "homepage": "https://github.com/agneym/preact-cli-tailwind#readme",
   "scripts": {
     "lint": "eslint src",
     "release": "np --no-tests"
@@ -36,5 +37,12 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agneym/preact-cli-tailwind"
+  },
+  "bugs": {
+    "url": "https://github.com/agneym/preact-cli-tailwind/issues"
   }
 }
