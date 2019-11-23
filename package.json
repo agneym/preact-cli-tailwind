@@ -1,0 +1,16 @@
+{
+  "name": "preact-cli-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "preact",
+    "preact-cli",
+    "preact-plugin"
+  ],
+  "author": "Agney Menon <agney@outlook.in>",
+  "license": "ISC"
+}
