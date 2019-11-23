@@ -4,7 +4,7 @@
   "description": "Preact CLI Plugin that helps add Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "np --no-tests"
   },
   "keywords": [
     "preact",
