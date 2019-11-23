@@ -1,7 +1,7 @@
 {
   "name": "preact-cli-tailwind",
   "version": "1.0.0",
-  "description": "",
+  "description": "Preact CLI Plugin that helps add Tailwind CSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,22 @@
   "keywords": [
     "preact",
     "preact-cli",
-    "preact-plugin"
+    "preact-plugin",
+    "tailwind"
   ],
   "author": "Agney Menon <agney@outlook.in>",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "husky": "^3.1.0",
+    "np": "^5.1.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 }
