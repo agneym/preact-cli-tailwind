@@ -1,6 +1,10 @@
 const notFoundError = name => `Please pass the ${name} parameter to plugin`;
 
-export default (config, env, helpers) => {
+const defaultParams = {
+  regex: /[\w-/:]+(?<!:)/g,
+};
+
+export default (config, env, helpers, params = defaultParams) => {
   if (!config) throw new Error(notFoundError("config"));
   if (!env) throw new Error(notFoundError("env"));
   if (!helpers) throw new Error(notFoundError("helpers"));
@@ -10,7 +14,7 @@ export default (config, env, helpers) => {
     content: ["./src/**/*.js"],
 
     // Include any special characters you're using in this regular expression
-    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+    defaultExtractor: content => content.match(params.regex) || [],
   });
 
   const postCssLoaders = helpers.getLoadersByName(config, "postcss-loader");
