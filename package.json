@@ -13,12 +13,17 @@
     "preact-plugin",
     "tailwind"
   ],
+  "peerDependencies": {
+    "tailwindcss": "10.x"
+  },
   "files": [
     "src"
   ],
   "author": "Agney Menon <agney@outlook.in>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0"
+  },
   "devDependencies": {
     "eslint": "^6.7.0",
     "eslint-config-prettier": "^6.7.0",
