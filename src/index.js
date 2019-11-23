@@ -4,7 +4,7 @@ const defaultParams = {
   regex: /[\w-/:]+(?<!:)/g,
 };
 
-export default (config, env, helpers, params = defaultParams) => {
+module.exports = (config, env, helpers, params = defaultParams) => {
   if (!config) throw new Error(notFoundError("config"));
   if (!env) throw new Error(notFoundError("env"));
   if (!helpers) throw new Error(notFoundError("helpers"));
