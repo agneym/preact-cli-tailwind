@@ -1,6 +1,6 @@
 # Preact CLI Tailwind CSS Plugin
 
-![npm](https://img.shields.io/npm/v/preact-cli-tailwind)
+[![npm](https://img.shields.io/npm/v/preact-cli-tailwind)](https://www.npmjs.com/package/preact-cli-tailwind)
 
 Adds [Tailwind CSS](https://tailwindcss.com/) to [Preact CLI](https://github.com/preactjs/preact-cli).
 
