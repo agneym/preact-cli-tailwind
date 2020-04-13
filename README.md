@@ -10,20 +10,48 @@ Tailwind is added as a PostCSS Plugin. Also adds Purge CSS plugin in production.
 
 ```bash
 npm i preact-cli-tailwind --save-dev
+npm i tailwindcss --save
 
 # OR
 
 yarn add preact-cli-tailwind --dev
+yarn add tailwindcss
+```
+
+In root run:
+
+```
+npx tailwindcss init
+```
+
+Add these to global stylesheet `src/styles/index.css:
+
+```
+/* purgecss start ignore */
+@tailwind base;
+/* purgecss end ignore */
+
+/* purgecss start ignore */
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
 ```
 
 In your `preact.config.js`:
 
 ```js
-const tailwind = require("preact-cli-tailwind");
+/** ...*/
+import tailwind from "preact-cli-tailwind";
 
-module.exports = (config, env, helpers) => {
-  config = tailwind(config, env, helpers);
-  return config;
+export default {
+  webpack(config, env, helpers, options) {
+    /**
+     * ... after the boilerplate
+     */
+    config = tailwind(config, env, helpers);
+    return config;
+  },
 };
 ```
 
