@@ -1,5 +1,7 @@
 # Preact CLI Tailwind CSS Plugin
 
+> PostCSS above v1.4.0 automatically sets up PurgeCSS. You will not need to use this plugin in that case.
+
 [![npm](https://img.shields.io/npm/v/preact-cli-tailwind)](https://www.npmjs.com/package/preact-cli-tailwind)
 
 Adds [Tailwind CSS](https://tailwindcss.com/) to [Preact CLI](https://github.com/preactjs/preact-cli).
