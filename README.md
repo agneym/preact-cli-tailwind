@@ -1,21 +1,19 @@
 # Preact CLI Tailwind CSS Plugin
 
-> TailwindCSS above v1.4.0 automatically sets up PurgeCSS. You will not need to use this plugin in that case.
-
 [![npm](https://img.shields.io/npm/v/preact-cli-tailwind)](https://www.npmjs.com/package/preact-cli-tailwind)
 
 Adds [Tailwind CSS](https://tailwindcss.com/) to [Preact CLI](https://github.com/preactjs/preact-cli).
 
-Tailwind is added as a PostCSS Plugin. Also adds Purge CSS plugin in production.
+Tailwind is added as a PostCSS Plugin.
 
 ## Usage
 
 ```bash
-npm i preact-cli-tailwind --save-dev
+npm i preact-cli-tailwind tailwindcss --save-dev
 
 # OR
 
-yarn add preact-cli-tailwind --dev
+yarn add preact-cli-tailwind tailwindcss --dev
 ```
 
 In your `preact.config.js`:
@@ -32,19 +30,6 @@ module.exports = (config, env, helpers) => {
 ## API
 
 Pass in `config`, `env` and `helpers` as forwarded from config.
-
-It also exposes a fourth argument `params` which allows you to [customise the regex](https://tailwindcss.com/docs/controlling-file-size#understanding-the-regex) provided to Purge CSS.
-
-```js
-const tailwind = require("preact-cli-tailwind");
-
-module.exports = (config, env, helpers) => {
-  config = tailwind(config, env, helpers, {
-    regex: /[\w-/:%]+(?<!:)/g,
-  });
-  return config;
-};
-```
 
 ## Contributing
 
