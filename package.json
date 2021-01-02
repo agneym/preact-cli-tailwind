@@ -15,7 +15,7 @@
     "tailwind"
   ],
   "peerDependencies": {
-    "tailwindcss": "1.4.x"
+    "tailwindcss": "2.x.x"
   },
   "files": [
     "src"
