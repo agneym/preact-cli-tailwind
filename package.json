@@ -6,7 +6,8 @@
   "homepage": "https://github.com/agneym/preact-cli-tailwind#readme",
   "scripts": {
     "lint": "eslint src",
-    "release": "np --no-tests"
+    "release": "np --no-tests",
+    "prepare": "husky install"
   },
   "keywords": [
     "preact",
@@ -24,17 +25,12 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.7.0",
-    "eslint-config-prettier": "^6.7.0",
-    "husky": "^3.1.0",
-    "np": "^6.2.5",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^6.0.0",
+    "np": "^7.5.0",
+    "prettier": "^2.3.1",
+    "pretty-quick": "^3.1.0"
   },
   "repository": {
     "type": "git",
